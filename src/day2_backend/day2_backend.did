@@ -2,4 +2,6 @@ service : {
     "greet": (text, int8) -> (text) query;
     "add_blog": (text) -> ();
     "read_blogs": () -> (vec text) query;
+    "delete_blog": (nat64) -> ();
+    "edit_blog": (nat64, text) -> ();
 }
